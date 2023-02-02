@@ -1,6 +1,9 @@
-.H2 {
+
+.all-movies-section {
     color: brown;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    /* flex-direction: column ; */
+
 }

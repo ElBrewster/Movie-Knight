@@ -1,6 +1,6 @@
 import React from 'react'
 import MovieCardsContainer from './MovieCardsContainer'
-import '../css/AllMovies.css'
+import '../css/AllMovies.scss'
 
 
 export default function AllMovies () {

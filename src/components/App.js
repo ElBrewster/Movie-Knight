@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react'
 import AllMovies from './AllMovies'
-import '../css/App.css';
+import '../css/App.scss';
 
 function App() {
   return (

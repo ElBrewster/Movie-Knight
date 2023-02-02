@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/MovieCardsContainer.css'
+import '../css/MovieCardsContainer.scss'
 
 export default function MovieCardsContainer() {
     return (

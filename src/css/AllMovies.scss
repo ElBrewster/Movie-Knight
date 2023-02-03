@@ -1,9 +1,15 @@
 
-.all-movies-section {
+.heading-all-movies {
     color: brown;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     /* flex-direction: column ; */
 
+}
+
+.section-all-movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

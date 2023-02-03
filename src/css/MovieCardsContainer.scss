@@ -1,9 +1,10 @@
+@import './mini.scss';
+
 .movie-card-overview {
-    background-color: rgb(146, 140, 132);
-    border: 3px solid purple;
+    background-color: $PurpleBrown;
     color: aliceblue;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 3%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
     width: 80vw;
 }

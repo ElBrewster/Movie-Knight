@@ -1,10 +1,10 @@
 import React from "react";
 import "../css/SingleMovie.scss";
 
-export default function MovieCard () {
+export default function MovieCard ({ posterPath }) {
     return (
         <div className="movie-card">
-            <h2>movie card</h2>
+            <img src={posterPath} width='225vw' />
         </div>
     );
 }

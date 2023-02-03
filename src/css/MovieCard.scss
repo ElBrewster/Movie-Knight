@@ -1,5 +1,11 @@
+@import './mini.scss';
+
 .movie-card {
-    background-color: cornflowerblue;
-    color: navy;
+    background-color: $PrettySoftBlue;
+    color: $PrettySoftBlue;
     padding: auto;
+}
+
+img {
+    width: 17vw;
 }

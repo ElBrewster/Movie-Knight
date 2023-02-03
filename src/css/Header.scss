@@ -1,6 +1,8 @@
+@import './mini.scss';
+
 Header {
     align-items: center;
-    background-color: bisque;
+    background-color: $GreyBrown;
     border-bottom: 4px solid black;
     color: red;
     display: flex;

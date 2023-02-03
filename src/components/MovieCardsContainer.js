@@ -7,6 +7,7 @@ export default function MovieCardsContainer(movies) {
         return (
             <MovieCard 
                 posterPath={movie.poster_path}
+                key={movie.id}
             />
         )
     })

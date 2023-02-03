@@ -3,6 +3,8 @@ import "../css/SingleMovie.scss";
 
 export default function MovieCard () {
     return (
-        <h2>movie card</h2>
+        <div className="movie-card">
+            <h2>movie card</h2>
+        </div>
     );
 }

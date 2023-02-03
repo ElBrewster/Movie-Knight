@@ -14,7 +14,7 @@ class AllMovies extends React.Component {
         return (
             <div className='section-all-movies'>
                 <section className='heading-all-movies'>
-                    <h2>All Movies</h2>
+                    <h2>Filter by rating</h2>
                     <form className='star-filter' id='star-filter'>
                         <select id='filter-movies' name='filter-movies' placeholder='filter by rating'>
                             <option value='one-star'>⭐️</option>

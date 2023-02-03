@@ -1,0 +1,20 @@
+@import './mini.scss';
+
+.single-page-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    & p {
+        color: $Lightest;
+    }
+    & img {
+        margin-right: 65px;
+    }
+}
+
+.single-movie-description {
+    color: $Lightest;
+}

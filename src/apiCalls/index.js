@@ -22,3 +22,4 @@ export const getSelectedMovie = async (id) => {
 
     return response.json();
 }
+

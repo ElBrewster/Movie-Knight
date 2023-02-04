@@ -1,7 +1,7 @@
-import React from 'react'
-import MovieCardsContainer from './MovieCardsContainer'
-import { getAllMovies } from "../apiCalls/apiCalls.js";
-import '../css/AllMovies.scss'
+import React from 'react';
+import MovieCardsContainer from './MovieCardsContainer';
+import '../css/AllMovies.scss';
+import { getAllMovies } from '../apiCalls/';
 
 
 export default class AllMovies extends React.Component {
@@ -12,15 +12,17 @@ export default class AllMovies extends React.Component {
 
     componentDidMount() {
         this.fetchAllMovies();
-    }
+    };
 
     fetchAllMovies = async () => {
         try {
             const items = await getAllMovies();
-            this.setState(items)
+            this.setState(items);
         }
-        catch (error) { this.setState({ error: error.message }) } 
-    }
+        catch (error) { 
+            this.setState({ error: error.message }); 
+        } 
+    };
 
     render() {
         return (
@@ -31,17 +33,17 @@ export default class AllMovies extends React.Component {
                     <form className='star-filter' id='star-filter'>
                         <select id='filter-movies' name='filter-movies' placeholder='filter by rating'>
                             <option value='one-star'>⭐️</option>
-                            <option value='two-star'>⭐️⭐️</option>
-                            <option value='three-star'>⭐️⭐️⭐️</option>
-                            <option value='four-star'>⭐️⭐️⭐️⭐️</option>
-                            <option value='five-star'>⭐️⭐️⭐️⭐️⭐️</option>
-                            <option value='six-star'>⭐️⭐️⭐️⭐️⭐️⭐️</option>
-                            <option value='seven-star'>⭐️⭐️⭐️⭐️⭐️⭐️⭐️</option>
+                            <option value='two-stars'>⭐️⭐️</option>
+                            <option value='three-stars'>⭐️⭐️⭐️</option>
+                            <option value='four-stars'>⭐️⭐️⭐️⭐️</option>
+                            <option value='five-stars'>⭐️⭐️⭐️⭐️⭐️</option>
+                            <option value='six-stars'>⭐️⭐️⭐️⭐️⭐️⭐️</option>
+                            <option value='seven-stars'>⭐️⭐️⭐️⭐️⭐️⭐️⭐️</option>
                         </select>
                     </form>
                 </section>
                 <MovieCardsContainer movies={this.state.movies} selectMovie={this.props.selectMovie}/>
             </div>        
-        )
+        );
     }
 }

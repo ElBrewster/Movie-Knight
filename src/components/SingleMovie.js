@@ -3,12 +3,14 @@ import "../css/SingleMovie.scss";
 import movieData from "../apiCalls/mock-data";
 
 export default class SingleMovie extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-            movie: movieData.movies[11]
+            movie: this.props.movie
         }
     }
+
+    returnToMainPaige = () => {this.props.resetState()}
 
     render() {
         return (
@@ -22,7 +24,7 @@ export default class SingleMovie extends React.Component {
                     </h2>
                     <p>{this.state.movie["average_rating"].toFixed(1)}</p>
                     <p>add single movie API description</p>
-                    <button>back</button>
+                    <button onClick={this.returnToMainPaige}>back</button>
                 </div>
             </div>
         )

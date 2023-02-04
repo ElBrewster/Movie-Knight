@@ -2,9 +2,9 @@
 
 Header {
     align-items: center;
-    background-color: $GreyBrown;
-    border-bottom: 4px solid black;
-    color: red;
+    background-color: darkslategray;
+    border-bottom: 4px solid $Dark;
+    color: $Light;
     display: flex;
     font-size: 25px;
     height: 80px;

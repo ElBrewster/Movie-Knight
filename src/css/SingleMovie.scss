@@ -1,17 +1,19 @@
 @import './mini.scss';
 
 .single-page-container {
+    background-color: $GreyBrown;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: 900px;
+    max-width: 300px;
     margin: auto;
     padding: 30px;
-    & p {
+    p {
         color: $Lightest;
     }
-    & img {
+    img {
         margin-right: 65px;
+        width: 17vw;
     }
 }
 

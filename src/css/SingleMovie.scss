@@ -1,0 +1,22 @@
+@import './mini.scss';
+
+.single-page-container {
+    background-color: $GreyBrown;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 300px;
+    margin: auto;
+    padding: 30px;
+    p {
+        color: $Lightest;
+    }
+    img {
+        margin-right: 65px;
+        width: 17vw;
+    }
+}
+
+.single-movie-description {
+    color: $Lightest;
+}

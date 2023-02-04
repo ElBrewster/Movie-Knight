@@ -20,3 +20,11 @@
 .single-movie-description {
     color: $Lightest;
 }
+
+.error-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+}

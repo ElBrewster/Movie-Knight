@@ -8,7 +8,7 @@ export default function MovieCard ({ posterPath, selectMovie }) {
 
     return (
         <div className="movie-card" onClick={handleClick}>
-            <img src={posterPath} width='225vw' />
+            <img src={ posterPath } width='225vw' />
         </div>
     );
 }

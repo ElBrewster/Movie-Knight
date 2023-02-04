@@ -4,18 +4,23 @@ import MovieCard from './MovieCard';
 
 export default function MovieCardsContainer(props) {
     const movieCards = props.movies.map(movie => {
+        function sendMovie() {
+            props.selectMovie(movie)
+        }
+
         return (
             <MovieCard 
-                selectMovie={() => props.selectMovie(movie)}
-                posterPath={movie.poster_path}
-                key={movie.id}
+                selectMovie={ sendMovie }
+                posterPath={ movie.poster_path }
+                key={ movie.id }
             />
         )
     })
+
     return (
         <>
             <section className='movie-card-overview'>
-                {movieCards}
+                { movieCards }
             </section>
         </>
     )

@@ -2,6 +2,8 @@ import "../css/SingleMovie.scss";
 import React from "react";
 import { getAllMovies } from "../apiCalls";
 import { getSelectedMovie } from "../apiCalls";
+import AllMovies from "./AllMovies";
+import { Route, Redirect, Link } from "react-router-dom";
 
 export default class SingleMovie extends React.Component {
     constructor(props){
@@ -9,13 +11,9 @@ export default class SingleMovie extends React.Component {
         this.state = { movie: null };
     }
 
-    returnToMainPaige = () => {
-        this.props.resetState();
-    };
-
     fetchSelectedMovie = async () => {
         try {
-            const item = await getSelectedMovie(this.props.movie.id);
+            const item = await getSelectedMovie(this.props.match.params.id);
             this.setState({movie: item.movie});
         }
         catch (error) {
@@ -28,8 +26,7 @@ export default class SingleMovie extends React.Component {
     };
 
     render() {
-        return (
-            this.state.movie ? (
+        return this.state.movie ? (
             <div className="single-page-container">
                 <img src={this.state.movie.poster_path} alt="movie poster image" />
                 <div className="single-movie-description">
@@ -37,14 +34,14 @@ export default class SingleMovie extends React.Component {
                         {this.state.movie.title}(
                         {this.state.movie["release_date"].slice(0, 4)})
                     </h2>
-                    <p>{this.state.movie["average_rating"].toFixed(1)}</p>
-                    <p>⭐️ {this.state.movie.overview }</p>
+                    <p>⭐️ {this.state.movie["average_rating"].toFixed(1)}</p>
+                    <p>{this.state.movie.overview }</p>
                     <p>Genres: {this.state.movie.genres.join(", ")}</p>
-                    <button onClick={this.returnToMainPaige}>back</button>
+                    <Link to="/">Go Back</Link>
                 </div>
             </div>
-
-            ) : <h4 className="error-message">{this.state.error}</h4>
-        );
+            ) : (
+            <h4 className="error-message">{this.state.error}</h4>
+            );
     }
 }

@@ -7,7 +7,7 @@ export default function Header () {
         <header>
             <div>
                 <img src={logo} alt="logo"></img>
-                <h1>Rancid Tomatillos</h1>
+                <h1>Movie Knight</h1>
             </div>
         </header>
     );

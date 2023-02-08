@@ -1,4 +1,4 @@
-describe('AllMovies main page display', () => {
+describe('Movie Knight main page user flow', () => {
   beforeEach(() => {
     cy.intercept("https://rancid-tomatillos.herokuapp.com/api/v2/movies", {
       method: "GET",
@@ -8,7 +8,7 @@ describe('AllMovies main page display', () => {
   })
 
   it('Should show the title', () => {
-    cy.contains("Rancid Tomatillos")
+    cy.contains("Movie Knight")
   })
 
   it("Should show a drop-down menu that says Filter By Rating", () => {
@@ -28,5 +28,4 @@ describe('AllMovies main page display', () => {
     cy.get(".image").eq(2).should("have.attr", "src", "https://image.tmdb.org/t/p/original//uOw5JD8IlD546feZ6oxbIjvN66P.jpg")
     cy.get(".image").eq(3).should("have.attr", "src", "https://image.tmdb.org/t/p/original//qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg")
   })
-
 })

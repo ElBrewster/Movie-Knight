@@ -28,7 +28,7 @@ export default class SingleMovie extends React.Component {
     render() {
         return this.state.movie ? (
             <div className="single-page-container">
-                <img src={this.state.movie.poster_path} alt="movie poster image" ></img>
+                <img className="image" src={this.state.movie.poster_path} alt="movie poster image" ></img>
                 <div className="single-movie-description">
                     <h2>
                         {this.state.movie.title}(

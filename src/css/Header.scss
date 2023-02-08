@@ -1,10 +1,9 @@
-@import './mini.scss';
 
 Header {
     align-items: center;
     background-color: darkslategray;
-    border-bottom: 4px solid $Dark;
-    color: $Light;
+    border-bottom: 4px solid darkblue;
+    color: white;
     display: flex;
     font-size: 25px;
     height: 80px;

@@ -1,8 +1,8 @@
-@import './mini.scss';
+
 
 .movie-card-overview {
     background-color: darkslategray;
-    color: $Lightest;
+    color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1%;

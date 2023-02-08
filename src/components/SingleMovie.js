@@ -1,9 +1,7 @@
 import "../css/SingleMovie.scss";
 import React from "react";
-import { getAllMovies } from "../apiCalls";
 import { getSelectedMovie } from "../apiCalls";
-import AllMovies from "./AllMovies";
-import { Route, Redirect, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class SingleMovie extends React.Component {
     constructor(props){
@@ -28,7 +26,7 @@ export default class SingleMovie extends React.Component {
     render() {
         return this.state.movie ? (
             <div className="single-page-container">
-                <img src={this.state.movie.poster_path} alt="movie poster image" />
+                <img className="image" src={this.state.movie.poster_path} alt="movie poster image" ></img>
                 <div className="single-movie-description">
                     <h2>
                         {this.state.movie.title}(

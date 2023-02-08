@@ -1,9 +1,7 @@
 import "../css/SingleMovie.scss";
 import React from "react";
-import { getAllMovies } from "../apiCalls";
 import { getSelectedMovie } from "../apiCalls";
-import AllMovies from "./AllMovies";
-import { Route, Redirect, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class SingleMovie extends React.Component {
     constructor(props){

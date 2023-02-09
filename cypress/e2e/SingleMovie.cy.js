@@ -1,4 +1,12 @@
 describe('Movie Knight single movie user flow', () => {
+  it("should show an error if there is a network problem", () => {
+    cy.intercept('https://rancid-tomatillos.herokuapp.com/api/v2/movies', {
+      method: "GET",
+      fixture: ""
+    })
+    cy.visit("http://localhost:3000/")
+    cy.get('.text--error').contains("Couldn't communicate with the server. Please try again later.")
+  })
   beforeEach(() => {
     cy.intercept("https://rancid-tomatillos.herokuapp.com/api/v2/movies", {
       method: "GET",

@@ -4,8 +4,28 @@
     color: mediumaquamarine;
     padding: auto;
     width: 17vw;
+    position: relative;
     img {
         width: 100%;
         margin: auto;
+    }
+    p {
+        background-color: aliceblue;
+        color: black;
+        width: fit-content;
+        padding: 20px;
+        position: absolute;
+    }
+    a {
+        color: white;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        font-weight: 700;
+        &:hover {
+            text-decoration:adjust-color($color: #da1919, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+        }
     }
 }

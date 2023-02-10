@@ -41,21 +41,28 @@ export default class AllMovies extends React.Component {
                 <section className='heading--all-movies'>
                     <h2>Filter By Rating</h2>
                     <form className='star-filter' id='star-filter'>
-                        <select 
-                        onChange={this.handleFilterByRating}
-                        id='filter-movies' 
-                        name='filter-movies' 
-                        placeholder='filter by rating'
-                        >
-                            <option value='0'>Rating</option>
-                            <option value='1'>⭐️</option>
-                            <option value='2'>⭐️⭐️</option>
-                            <option value='3'>⭐️⭐️⭐️</option>
-                            <option value='4'>⭐️⭐️⭐️⭐️</option>
-                            <option value='5'>⭐️⭐️⭐️⭐️⭐️</option>
-                            <option value='6'>⭐️⭐️⭐️⭐️⭐️⭐️</option>
-                            <option value='7'>⭐️⭐️⭐️⭐️⭐️⭐️⭐️</option>
-                        </select>
+                        <div className="star-rating" onChange={this.handleFilterByRating}>
+                            <input type="radio" id="10-stars" name="rating" value="10" />
+                            <label htmlFor="10-stars" className="star">&#9733;</label>
+                            <input type="radio" id="9-stars" name="rating" value="9" />
+                            <label htmlFor="9-stars" className="star">&#9733;</label>
+                            <input type="radio" id="8-stars" name="rating" value="8" />
+                            <label htmlFor="8-stars" className="star">&#9733;</label>
+                            <input type="radio" id="7-stars" name="rating" value="7" />
+                            <label htmlFor="7-stars" className="star">&#9733;</label>
+                            <input type="radio" id="6-star" name="rating" value="6" />
+                            <label htmlFor="6-star" className="star">&#9733;</label>
+                            <input type="radio" id="5-stars" name="rating" value="5" />
+                            <label htmlFor="5-stars" className="star">&#9733;</label>
+                            <input type="radio" id="4-stars" name="rating" value="4" />
+                            <label htmlFor="4-stars" className="star">&#9733;</label>
+                            <input type="radio" id="3-stars" name="rating" value="3" />
+                            <label htmlFor="3-stars" className="star">&#9733;</label>
+                            <input type="radio" id="2-stars" name="rating" value="2" />
+                            <label htmlFor="2-stars" className="star">&#9733;</label>
+                            <input type="radio" id="1-star" name="rating" value="1" />
+                            <label htmlFor="1-star" className="star">&#9733;</label>
+                        </div>
                     </form>
                 </section>
                 {this.state.error && (

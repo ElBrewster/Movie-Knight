@@ -22,6 +22,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .error {
+        min-height: 65vh;
+        color: white;
+      }
 }
 
 .text--error {

@@ -3,19 +3,15 @@
     background-color: lightblue;
     color: mediumaquamarine;
     padding: auto;
-    width: 17vw;
+    width: 16vw;
     position: relative;
+    object-fit: fill;
+    
     img {
-        width: 100%;
+        width: 80%;
         margin: auto;
     }
-    p {
-        background-color: aliceblue;
-        color: black;
-        width: fit-content;
-        padding: 20px;
-        position: absolute;
-    }
+
     a {
         color: white;
         display: block;
@@ -28,4 +24,8 @@
             text-decoration:adjust-color($color: #da1919, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
         }
     }
+}
+
+.frontPage {
+    border-radius: .1em;
 }

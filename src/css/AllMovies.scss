@@ -29,20 +29,25 @@
   }
   
 .heading--all-movies {
-    color: brown;
+    color: #ca0403;
     display: flex;
     align-items: center;
+    height: 11vh;
     justify-content: space-evenly;
-    h2 {
-        display:flex;
-        margin-right: 300px;
-        color: white;
-        font-size: 50px;
-    }
+    // h2 {
+    //     display:flex;
+    //     margin-right: 300px;
+    //     color: white;
+    //     font-size: 50px;
+    // }
+}
+
+.banana {
+    font-size: medium;
 }
 
 .section--all-movies {
-    background-color: brown;
+    background-color: #090a18;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,5 +58,6 @@
 }
 
 .text--error {
-    color: white;
+    color: #f6eedf;
   }
+

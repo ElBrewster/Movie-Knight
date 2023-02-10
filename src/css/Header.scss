@@ -15,17 +15,18 @@ Header {
         & img {
             align-items: center;
             display: flex;
-            width: 100px;
+            // width: 100px;
         }
         & h1 {
             font-weight: 700;
+            font-stretch: ultra-expanded;
         }
     }
 }
 
 .horse-knight {
     color: #f6eedf;
-    height: 2.5em;
+    height: 100%;
     padding-left: 2em;
-    width: 2.5em;
+    width: 2em;
 }

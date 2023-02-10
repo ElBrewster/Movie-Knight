@@ -59,6 +59,8 @@
     width: fit-content;
     font-weight: 700;
     &:hover {
+        background-color: rgb(202, 4, 3, .3);
+        color:  #f6eedf;
         text-decoration:underline;
     }
 }

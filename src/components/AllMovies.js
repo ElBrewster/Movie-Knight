@@ -58,7 +58,11 @@ export default class AllMovies extends React.Component {
                         </select>
                     </form>
                 </section>
-                {this.state.error && <h4 className='error'>{this.state.error}</h4>}
+                {this.state.error && (
+                    <h4 className="text--error">
+                        Couldn't communicate with the server. Please try again later.
+                    </h4>
+                )}
                 <MovieCardsContainer movies={this.getFilterMovies()} selectMovie={this.props.selectMovie}/>
             </div>        
         );

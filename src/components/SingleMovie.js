@@ -36,7 +36,7 @@ export default class SingleMovie extends React.Component {
             genres
         } = this.state.movie || {};
         return this.state.movie ? (
-            <div className="single-page-container" style={{backgroundImage: `url(${backdrop_path})`}}>
+            <div className="single-page-container" style={{backgroundImage: `linear-gradient(to bottom, transparent, 30%, black), url(${backdrop_path})`}}>
                 <img className="poster" src={poster_path} alt="movie poster image" ></img>
                 <div className="single-movie-description">
                     <h2>

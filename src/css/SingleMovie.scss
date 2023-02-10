@@ -1,15 +1,16 @@
 .single-page-container {
-    background-color: darkslategrey;
+    // background: linear-gradient(to bottom, transparent, 5%, black);
+    background-size: cover;
     display: flex;
     align-items: center;
     width: 100%;
     height: 80vh;
     margin: auto;
-    padding-left: 30px;
     p {
         color: white;
     }
     img {
+        padding-left: 30px;
         margin-right: 65px;
         width: 17vw;
     }
@@ -44,7 +45,7 @@
 }
 
 .back-button {
-    color: black;
+    color: #090a18;
     background-color: white;
     border-radius: .1em;
     display: block;

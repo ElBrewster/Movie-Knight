@@ -7,8 +7,9 @@ export default function MovieCard ({ posterPath, id }) {
 
     return (
         <div className="movie-card">
-            <img className="image" src={ posterPath } width='225vw' ></img>
-            <Link to={"/movies/" + id} >See More</Link>
+            <Link to={"/movies/" + id} >
+                <img className="frontPage" src={ posterPath } width='220vw' ></img>     
+            </Link>
         </div>
     );
 }

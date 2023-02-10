@@ -1,11 +1,11 @@
 .single-page-container {
     background-color: darkslategrey;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 300px;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
     margin: auto;
-    padding: 30px;
+    padding-left: 30px;
     p {
         color: white;
     }
@@ -18,6 +18,14 @@
         color: white;
         font-size: 40px;
     }
+}
+
+.summary {
+    width: 40vw;
+}
+
+.frontPage {
+    border-radius: .1em;
 }
 
 .error-message {
@@ -38,6 +46,7 @@
 .back-button {
     color: black;
     background-color: white;
+    border-radius: .1em;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -49,4 +58,17 @@
     &:hover {
         text-decoration:underline;
     }
+}
+
+.star-box {
+    align-content: baseline;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    text-decoration: underline;
+}
+.star-emoji {
+    align-self: baseline;
+    height: 1.5em;
+    width: 1.5em;
 }

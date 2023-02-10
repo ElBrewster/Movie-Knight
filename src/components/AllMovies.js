@@ -39,7 +39,8 @@ export default class AllMovies extends React.Component {
         return (
             <div className='section--all-movies'>
                 <section className='heading--all-movies'>
-                    <h2>Filter By Rating</h2>
+                    <h2 className='banana'>Filter By Rating</h2>
+                    {this.state.error && <h4 className="text--error">Couldn't communicate with the server. Please try again later.</h4>}
                     <form className='star-filter' id='star-filter'>
                         <select 
                         onChange={this.handleFilterByRating}

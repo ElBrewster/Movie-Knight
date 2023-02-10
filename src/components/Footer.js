@@ -1,29 +1,19 @@
 import "../css/Footer.scss";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
-import { AiOutlineLinkedin } from "react-icons/ai";
 import { SiLinkedin } from "react-icons/si";
+import { BsDot } from "react-icons/bs";
 
 export default function Footer () {
     return (
         <footer>
-            <p>Our Git Hub Tags</p>
-            <BsLinkedin />
-            <BsLinkedin />
-            <FaGithubSquare />
-            <FaGithubSquare />
-            <SiGithub />
-            <SiGithub />
-            <AiOutlineLinkedin />
-            <AiOutlineLinkedin />
-            <SiLinkedin />
-            <SiLinkedin />
-
-
-
-
-
+            <p>Find Us:&nbsp;&nbsp;Karrar
+            <BsDot />
+            <SiGithub type="button" className="github"/>&nbsp;
+            <SiLinkedin className="linkedin"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El
+            <BsDot />
+            <SiGithub className="github"/>&nbsp;
+            <SiLinkedin className="linkedin"/>&nbsp;&nbsp;
+            </p>
         </footer>
     )
 }

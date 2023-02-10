@@ -1,14 +1,16 @@
 import "../css/Header.scss";
-import logo from "../assets/logo.svg";
-// import { GiMountedKnight } from "react-icons/gi";
+import { GiMountedKnight } from "react-icons/gi";
+import { IconContext } from "react-icons";
 
 
 export default function Header () {
     return (
         <header>
             <div>
-                {/* <GiMountedKnight alt="knight logo"/> */}
-                <h1>Movie Knight</h1>
+                <IconContext.Provider value={{color: " #f6eedf", className: "horse-knight"}}>
+                    <GiMountedKnight alt="knight logo"/>    
+                </IconContext.Provider>
+                <h1>&nbsp;&nbsp;MOVIE KNIGHT</h1>
             </div>
         </header>
     );

@@ -1,11 +1,9 @@
 
 body {
   background-color: #090a18;
-  color: darkslategrey;
+  color: #f6eedf;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,5 +14,6 @@ code {
 }
 
 .App {
+  color: #f6eedf;
   min-height: 100vh;
 }

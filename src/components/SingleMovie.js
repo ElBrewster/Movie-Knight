@@ -4,6 +4,7 @@ import { getSelectedMovie } from "../apiCalls";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { AiTwotoneStar } from "react-icons/ai";
+import { BsStar } from "react-icons/bs";
 
 export default class SingleMovie extends React.Component {
     constructor(props){
@@ -43,8 +44,8 @@ export default class SingleMovie extends React.Component {
                         {title}({release_date.slice(0, 4)})
                     </h2>
                     <p className="star-box">
-                        <IconContext.Provider value={{color: "#daeefb", className: "star-emoji"}}>
-                                <AiTwotoneStar />       
+                        <IconContext.Provider value={{color: " #f6eedf", className: "star-emoji"}}>
+                                <BsStar alt="star rating icon" />       
                         </IconContext.Provider>&nbsp;&nbsp;
                         {average_rating.toFixed(1)}
                     </p>

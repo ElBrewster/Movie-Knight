@@ -2,10 +2,11 @@ describe('Movie Knight main page user flow', () => {
   beforeEach(() => {
     cy.intercept("https://rancid-tomatillos.herokuapp.com/api/v2/movies", {
       method: "GET",
-      fixture: "../fixtures/AllMovies.json"
-    })
-    cy.visit("http://localhost:3000")
-  })
+      fixture: "",
+    });
+    cy.visit("http://localhost:3000/");
+    cy.get(".text--error").contains("Unexpected end of JSON input");
+  });
 
   it('Should show the title', () => {
     cy.contains("Movie Knight")

@@ -1,10 +1,8 @@
-
 .star-rating {
-    border:solid 1px #ccc;
     display:flex;
     flex-direction: row-reverse;
     font-size:1.5em;
-    justify-content:space-around;
+    justify-content:right;
     padding:0 .2em;
     text-align:center;
     width:10em;

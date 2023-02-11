@@ -19,11 +19,6 @@ export default function Footer () {
             <AiOutlineLinkedin />
             <SiLinkedin />
             <SiLinkedin />
-
-
-
-
-
         </footer>
     )
 }

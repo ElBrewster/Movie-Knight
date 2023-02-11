@@ -6,15 +6,20 @@ Footer {
     bottom: 0;
     color: #f6eedf;
     display: flex;
-    font-size: 1.8em;
+    font-size: 1.3em;
     height: 10vh;
-    justify-content: center;
     left: 0;
+    padding-left: 2em;
     position: fixed;
+    text-decoration: none;
     width: 100%;
     p {
         margin: 0;
     }
+}
+
+.anchor {
+    text-decoration: none;
 }
 
 .github {
@@ -27,5 +32,5 @@ Footer {
 
 .github:hover,
 .linkedin:hover {
-    color: red;
+    color: rgb(202, 4, 3, 0.8);
 }

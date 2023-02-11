@@ -6,13 +6,21 @@ import { BsDot } from "react-icons/bs";
 export default function Footer () {
     return (
         <footer>
-            <p>Find Us:&nbsp;&nbsp;Karrar
+            <p>Created By:&nbsp;&nbsp;Karrar
             <BsDot />
-            <SiGithub type="button" className="github"/>&nbsp;
-            <SiLinkedin className="linkedin"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El
+            <a href="https://github.com/KarrarQ" aria-label="Go to Karrar's github page" className="anchor">
+                <SiGithub type="button" className="github"/>&nbsp;
+            </a>
+            <a href="https://www.linkedin.com/in/karrar-qasim-b6307024b/" aria-label="Go to Karrar's linked-in page" className="anchor">
+                <SiLinkedin className="linkedin"/>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El
             <BsDot />
-            <SiGithub className="github"/>&nbsp;
-            <SiLinkedin className="linkedin"/>&nbsp;&nbsp;
+            <a href="https://github.com/ElBrewster" aria-label="Go to El's github page" className="anchor">
+                <SiGithub className="github"/>&nbsp;
+            </a>
+            <a href="https://www.linkedin.com/in/el-brewster-9817b0255/" aria-label="Go to El's linked-in page" className="anchor">
+                <SiLinkedin className="linkedin"/>&nbsp;&nbsp;
+            </a>
             </p>
         </footer>
     )

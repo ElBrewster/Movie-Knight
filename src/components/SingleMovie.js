@@ -37,23 +37,26 @@ export default class SingleMovie extends React.Component {
             genres
         } = this.state.movie || {};
         return this.state.movie ? (
-            <div className="single-page-container" style={{backgroundImage: `linear-gradient(to bottom, transparent, 30%, black), url(${backdrop_path})`}}>
-                <img className="poster" src={poster_path} alt="movie poster image" ></img>
-                <div className="single-movie-description">
-                    <h2>
-                        {title}({release_date.slice(0, 4)})
-                    </h2>
-                    <p className="star-box">
-                        <IconContext.Provider value={{color: " #f6eedf", className: "star-emoji"}}>
-                                <BsStar alt="star rating icon" />       
-                        </IconContext.Provider>&nbsp;&nbsp;
-                        {average_rating.toFixed(1)}
-                    </p>
-                    <p className="summary">{overview}</p>
-                    <p>Genres: {genres.join(", ")}</p>
-                    <Link className='back-button' to="/">
-                        Back
-                    </Link>
+            <div className="column-container" style={{backgroundImage: `linear-gradient(to bottom, transparent, 30%, black), url(${backdrop_path})`}}>
+                <section className="empty-top-space"></section>
+                <div className="single-page-container">
+                    <img className="poster" src={poster_path} alt="movie poster image" ></img>
+                    <div className="single-movie-description">
+                        <h2>
+                            {title}({release_date.slice(0, 4)})
+                        </h2>
+                        <p className="star-box">
+                            <IconContext.Provider value={{color: " #f6eedf", className: "star-emoji"}}>
+                                    <BsStar alt="star rating icon" />       
+                            </IconContext.Provider>&nbsp;&nbsp;
+                            {average_rating.toFixed(1)}
+                        </p>
+                        <p className="summary">{overview}</p>
+                        <p>Genres: {genres.join(", ")}</p>
+                        <Link className='back-button' to="/">
+                            Back
+                        </Link>
+                    </div>
                 </div>
             </div>
             ) : (

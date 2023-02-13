@@ -2,8 +2,8 @@ import React from 'react'
 import '../css/MovieCardsContainer.scss'
 import MovieCard from './MovieCard';
 
-export default function MovieCardsContainer(props) {
-    const movieCards = props.movies.map(movie => {
+export default function MovieCardsContainer({movies}) {
+    const movieCards = movies.map(movie => {
         return (
             <MovieCard 
                 posterPath={ movie.poster_path }

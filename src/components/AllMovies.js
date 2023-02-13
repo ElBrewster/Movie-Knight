@@ -6,8 +6,8 @@ import '../css/AllMovies.scss';
 
 
 export default class AllMovies extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = { movies: [], byRating:'0' };
     };
 

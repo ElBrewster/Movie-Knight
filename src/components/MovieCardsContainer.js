@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types";
 import '../css/MovieCardsContainer.scss'
 import MovieCard from './MovieCard';
 
@@ -18,4 +19,8 @@ export default function MovieCardsContainer({ movies }) {
             { movieCards }
         </section>
     );
+};
+
+MovieCardsContainer.propTypes = {
+    movies: PropTypes.array
 };

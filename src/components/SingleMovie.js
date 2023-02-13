@@ -4,6 +4,7 @@ import { getSelectedMovie } from "../apiCalls";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { BsStar } from "react-icons/bs";
+import PropTypes from "prop-types";
 
 export default class SingleMovie extends React.Component {
     constructor(){
@@ -65,5 +66,19 @@ export default class SingleMovie extends React.Component {
                 </Link>
             </div>
             );
-    };
+    }
+}
+
+SingleMovie.propTypes = {
+    poster_path: PropTypes.string.isRequired,
+    backdrop_path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    release_date: PropTypes.number.isRequired,
+    average_rating: PropTypes.number.isRequired,
+    overview: PropTypes.string.isRequired,
+    // genres: PropTypes.array.isRequired
 };
+
+SingleMovie.defaultProps = {
+    movie: null
+}

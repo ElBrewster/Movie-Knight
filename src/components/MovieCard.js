@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../css/SingleMovie.scss";
 import {Link} from "react-router-dom";
 
@@ -13,3 +14,9 @@ export default function MovieCard ({ posterPath, id, title }) {
         </div>
     );
 }
+
+MovieCard.propTypes = {
+    posterPath: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired
+};

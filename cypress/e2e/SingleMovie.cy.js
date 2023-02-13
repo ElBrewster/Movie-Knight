@@ -18,7 +18,7 @@ describe('Movie Knight single movie user flow', () => {
     )
       .get(".single-page-container")
       .should("be.visible")
-      .get(".image")
+      .get(".poster")
       .should(
         "have.attr",
         "src",

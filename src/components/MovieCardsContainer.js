@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types";
 import '../css/MovieCardsContainer.scss'
 import MovieCard from './MovieCard';
 
@@ -25,4 +26,9 @@ export default function MovieCardsContainer(props) {
             </section>
         </>
     )
+}
+
+MovieCardsContainer.propTypes = {
+    poster_path: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired
 }

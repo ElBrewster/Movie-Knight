@@ -3,8 +3,8 @@ import React from "react";
 import { getSelectedMovie } from "../apiCalls";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
-import { AiTwotoneStar } from "react-icons/ai";
 import { BsStar } from "react-icons/bs";
+import PropTypes from "prop-types";
 
 export default class SingleMovie extends React.Component {
     constructor(props){
@@ -69,3 +69,13 @@ export default class SingleMovie extends React.Component {
             );
     }
 }
+
+SingleMovie.propTypes = {
+    poster_path: PropTypes.string.isRequired,
+    backdrop_path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    release_date: PropTypes.number.isRequired,
+    average_rating: PropTypes.number.isRequired,
+    overview: PropTypes.string.isRequired,
+    genres: PropTypes.string.isRequired
+};

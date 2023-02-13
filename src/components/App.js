@@ -1,27 +1,12 @@
-import React from 'react'
-import AllMovies from './AllMovies'
+import React from 'react';
 import Footer from "./Footer.js";
 import Header from "./Header.js";
+import AllMovies from './AllMovies'
 import SingleMovie from './SingleMovie';
 import { Route } from "react-router-dom";
 
-export default class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      selectedMovie: null
-    }
-  }
 
-  selectMovie = (movie) => {
-    this.setState({selectedMovie: movie})
-  }
-
-  resetState = () => {
-    this.setState({selectedMovie: null})
-  }
-
-  render () {
+export default function App() {
     return (
         <div className='App'>
             <Header />
@@ -30,6 +15,6 @@ export default class App extends React.Component {
             <Footer />
         </div>
     );
-  }
-}
+};
+
 

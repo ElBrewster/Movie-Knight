@@ -3,12 +3,11 @@ import React from "react";
 import { getSelectedMovie } from "../apiCalls";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
-import { AiTwotoneStar } from "react-icons/ai";
 import { BsStar } from "react-icons/bs";
 
 export default class SingleMovie extends React.Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state = { movie: null };
     }
 
@@ -66,5 +65,5 @@ export default class SingleMovie extends React.Component {
                 </Link>
             </div>
             );
-    }
-}
+    };
+};

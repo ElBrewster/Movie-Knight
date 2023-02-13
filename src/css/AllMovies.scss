@@ -19,44 +19,37 @@
     padding:0 .2em;
     text-align:center;
     width:10em;
-  }
+};
   
-  .star-rating input {
+.star-rating input {
     display:none;
-  }
+};
   
-  .star-rating label {
+.star-rating label {
     color:#ccc;
     cursor:pointer;
-  }
+};
   
-  .star-rating :checked ~ label {
+.star-rating :checked ~ label {
     color:rgb(255, 234, 1);
-  }
+};
   
-  .star-rating label:hover,
-  .star-rating label:hover ~ label {
+.star-rating label:hover,
+.star-rating label:hover ~ label {
     color:#fc0;
-  }
+};
   
 .heading--all-movies {
     color:  #f6eedf;
     display: flex;
     align-items: center;
     height: 11vh;
-    justify-content: flex-start;
-    h2 {
-        display:flex;
-        margin-right: 20px;
-        color: white;
-        font-size: 1.4em;
-    }
-    width: 40%;
-}
+    justify-content: space-evenly;
+};
 
 .banana {
     font-size: medium;
-}
+};
 
 .section--all-movies {
     background-color: #090a18;
@@ -67,9 +60,9 @@
         min-height: 65vh;
         color: white;
       }
-}
+};
 
 .text--error {
     color: #f6eedf;
-  }
+};
 

@@ -2,13 +2,14 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-}
+};
 
 .empty-top-space {
     display: flex;
     flex-direction: column;
     height: 20vh;
-}
+};
+
 .single-page-container {
     display: flex;
     align-items: center;
@@ -26,15 +27,15 @@
         font-size: 3em;
         margin: 0;
     }
-}
+};
 
 .summary {
     width: 40vw;
-}
+};
 
 .frontPage {
     border-radius: .1em;
-}
+};
 
 .error-message {
     display: flex;
@@ -42,14 +43,13 @@
     justify-content: center;
     color: #0b0904;
     font-size: 2em;
-
-}
+};
 
 .error-message-single {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+};
 
 .back-button {
     position: absolute;
@@ -68,16 +68,17 @@
     text-transform: uppercase;
     cursor: pointer;
     z-index: 1;
-}
+};
+
 .back-button:hover {
     animation: animation 8s linear infinite;
     border: none;
-}
+};
 
 @keyframes animation {
     0% { background-position: 0%; }
     100% { background-position: 400%; }
-}
+};
 
 .back-button:before {
     content: '';
@@ -93,11 +94,11 @@
     background-size: 400%;
     border-radius: 35px;
     transition: 1s;
-}
+};
 
 .back-button:hover::before {
     filter: blur(20px);
-}
+};
 
 
 

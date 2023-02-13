@@ -9,7 +9,7 @@ export default class AllMovies extends React.Component {
     constructor(props) {
         super(props);
         this.state = { movies: [], byRating:'0' };
-    }
+    };
 
     componentDidMount() {
         this.fetchAllMovies();
@@ -34,7 +34,7 @@ export default class AllMovies extends React.Component {
             return movie.average_rating >= this.state.byRating
         })
         return filtered
-    }
+    };
 
     render() {
         return (
@@ -48,5 +48,5 @@ export default class AllMovies extends React.Component {
                 <MovieCardsContainer movies={this.getFilterMovies()}/>
             </div>        
         );
-    }
-}
+    };
+};

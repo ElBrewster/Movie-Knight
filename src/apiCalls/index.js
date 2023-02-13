@@ -1,4 +1,3 @@
-
 export const getAllMovies = async () => {
     const url = "https://rancid-tomatillos.herokuapp.com/api/v2/movies";
 
@@ -9,7 +8,7 @@ export const getAllMovies = async () => {
     }
 
     return response.json();
-}
+};
 
 export const getSelectedMovie = async (id) => {
     const url = `https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`;
@@ -21,5 +20,5 @@ export const getSelectedMovie = async (id) => {
     }
 
     return response.json();
-}
+};
 

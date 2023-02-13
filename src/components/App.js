@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Footer from "./Footer.js";
 import Header from "./Header.js";
 import AllMovies from './AllMovies'
@@ -15,6 +15,6 @@ export default function App() {
             <Footer />
         </div>
     );
-}
+};
 
 

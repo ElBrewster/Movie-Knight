@@ -16,7 +16,7 @@ export default class Filter extends React.Component {
     componentWillUnmount() {
         this.setState({ rating: '0' });
         this.props.changeByRating('0');
-    }
+    };
 
     render() {
         return (
@@ -49,5 +49,5 @@ export default class Filter extends React.Component {
                     </form>
             </section>
         );
-    }
-}
+    };
+};

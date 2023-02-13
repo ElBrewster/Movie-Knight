@@ -3,8 +3,6 @@ import "../css/SingleMovie.scss";
 import {Link} from "react-router-dom";
 
 export default function MovieCard ({ posterPath, id, title }) {
-
-
     return (
         <div className="movie-card">
             <Link to={"/movies/" + id} >
@@ -12,4 +10,4 @@ export default function MovieCard ({ posterPath, id, title }) {
             </Link>
         </div>
     );
-}
+};

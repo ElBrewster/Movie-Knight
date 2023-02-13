@@ -6,8 +6,8 @@ import { IconContext } from "react-icons";
 import { BsStar } from "react-icons/bs";
 
 export default class SingleMovie extends React.Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state = { movie: null };
     }
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default class Filter extends React.Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
         this.state = {
             rating: '0'
         };

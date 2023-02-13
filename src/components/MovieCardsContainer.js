@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/MovieCardsContainer.scss'
 import MovieCard from './MovieCard';
 
-export default function MovieCardsContainer({movies}) {
+export default function MovieCardsContainer({ movies }) {
     const movieCards = movies.map(movie => {
         return (
             <MovieCard 

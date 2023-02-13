@@ -39,7 +39,7 @@ export default class SingleMovie extends React.Component {
             <div className="column-container" style={{backgroundImage: `linear-gradient(to bottom, transparent, 30%, black), url(${backdrop_path})`}}>
                 <section className="empty-top-space"></section>
                 <div className="single-page-container">
-                    <img className="poster" src={poster_path} alt="movie poster image" ></img>
+                    <img className="poster" src={poster_path} alt={title}></img>
                     <div className="single-movie-description">
                         <h2>
                             {title}({release_date.slice(0, 4)})
@@ -61,7 +61,7 @@ export default class SingleMovie extends React.Component {
             ) : (
             <div className="error-message-single">
                 <h4 className="error-message">Couldn't communicate with the server. Please try again later.</h4>
-                <Link className='back-btn' to='/'>
+                <Link className='back-button' to='/'>
                 </Link>
             </div>
             );

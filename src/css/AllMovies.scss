@@ -1,3 +1,16 @@
+.div-row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.empty-form-section{
+  height: 11vh;
+  width: 60%;
+}
+
 .star-rating {
     display:flex;
     flex-direction: row-reverse;
@@ -27,7 +40,7 @@
 };
   
 .heading--all-movies {
-    color: #ca0403;
+    color:  #f6eedf;
     display: flex;
     align-items: center;
     height: 11vh;

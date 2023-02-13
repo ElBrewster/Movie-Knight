@@ -39,6 +39,10 @@
     color:#fc0;
 };
   
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
 .heading--all-movies {
     color:  #f6eedf;
     display: flex;
@@ -46,6 +50,10 @@
     height: 11vh;
     justify-content: space-evenly;
 };
+.bumper {
+    height: 11vh;
+    width: 46vw;
+}
 
 .banana {
     font-size: medium;

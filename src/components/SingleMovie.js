@@ -76,5 +76,9 @@ SingleMovie.propTypes = {
     release_date: PropTypes.number.isRequired,
     average_rating: PropTypes.number.isRequired,
     overview: PropTypes.string.isRequired,
-    genres: PropTypes.string.isRequired
+    // genres: PropTypes.array.isRequired
 };
+
+SingleMovie.defaultProps = {
+    movie: null
+}

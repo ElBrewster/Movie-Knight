@@ -11,10 +11,10 @@ export default function MovieCard ({ posterPath, id, title }) {
             </Link>
         </div>
     );
-}
+};
 
 MovieCard.propTypes = {
     posterPath: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired
+    title: PropTypes.string
 };

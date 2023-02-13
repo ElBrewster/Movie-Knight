@@ -22,6 +22,5 @@ export default function MovieCardsContainer({ movies }) {
 };
 
 MovieCardsContainer.propTypes = {
-    poster_path: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired
+    movies: PropTypes.array
 };

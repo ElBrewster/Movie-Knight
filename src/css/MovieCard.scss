@@ -25,6 +25,12 @@
     }
 };
 
-.frontPage {
+.movie-card {
     border-radius: .1em;
+    transition: all .2s ease-in-out;
 };
+
+.movie-card:hover {
+    // transform: scale(0.9);
+    transform: scale(1.1);
+}

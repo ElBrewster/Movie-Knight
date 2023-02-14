@@ -70,13 +70,13 @@ export default class SingleMovie extends React.Component {
 }
 
 SingleMovie.propTypes = {
-    poster_path: PropTypes.string.isRequired,
-    backdrop_path: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    release_date: PropTypes.number.isRequired,
-    average_rating: PropTypes.number.isRequired,
-    overview: PropTypes.string.isRequired,
-    // genres: PropTypes.array.isRequired
+    poster_path: PropTypes.string,
+    backdrop_path: PropTypes.string,
+    title: PropTypes.string,
+    release_date: PropTypes.number,
+    average_rating: PropTypes.number,
+    overview: PropTypes.string,
+    genres: PropTypes.array
 };
 
 SingleMovie.defaultProps = {

@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+<h1 align="center"> Movie Knight </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Not sure what movie to watch tonight? Want to find out if it's any good? You need to visit Movie Knight!
 
-In the project directory, you can run:
+The Movie Knight Web App, built in React, displays some of the newest films out there! This application allows users to browse through a display of 40 movies, each of which is clickable to view additional information about the movie. 
 
-### `npm start`
+## Project Views
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home Page and Movie Page:
+![Movie Knight](https://media.giphy.com/media/5Jh3VLf122xYAG3XEL/giphy.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- This multi page App with React was an exercise for us to learn and grow our knowledge of the framework.
+- React Router was implemented to give unique URLs to the movies as well as default URL handling. Movie Knight shed light on how a multi page app might work with unique URLS in the real-world.
+- Compared to previous projects in VanillaJS, React maintained a sync'd state at all times, which expedited the process of displaying information accurately.
 
-### `npm run build`
+## Cypress Testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- All Testing of User views and user interactions
+- Error Handling of Server errors and invalid URLS Tested
+- Fetch requests are stubbed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Local Set-Up Instructions
 
-### `npm run eject`
+- From the repo click the code button and copy the SSH link.
+- Open terminal by pressing command + space bar, and search for terminal
+- Inside of your terminal type `git clone` and then paste the ssh link. It should look like this: [git@github.com:ElBrewster/Movie-Knight.git](git@github.com:ElBrewster/Movie-Knight.git)
+- In your terminal type `cd Movie-Knight`
+- Type `npm install`
+- Do not run `npm audit fix --force`
+- Then type `npm start` This runs the app in the development mode.
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The browser should then deploy using a local host
+- Enjoy using Movie-Knight!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- React Router
+- ES6 JavaScript
+- CSS
+- HTML
+- Fetch Web API
+- Cypress Testing
+- GET requests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Adding a responsive layout for mobile and varying device screen sizes
 
-## Learn More
+## Project management
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- We used a [Github Project Board](https://github.com/users/ElBrewster/projects/4) stay on task and meet the deadline.
+- The project specs and guideline for this project can be found [here](https://frontend.turing.edu/projects/module-3/rancid-tomatillos-v3.html)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Contributors:
+1. El Brewster
+    * [GitHub](https://github.com/ElBrewster)
+    * [LinkedIn](https://www.linkedin.com/in/el-brewster-9817b0255/)
+2. Karrar Qasim
+    * [GitHub](https://github.com/KarrarQ)
+    * [LinkedIn](https://www.linkedin.com/in/karrar-qasim-b6307024b/)

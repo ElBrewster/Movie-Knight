@@ -43,7 +43,7 @@ The Movie Knight Web App, built in React, displays some of the newest films out 
 - React
 - React Router
 - ES6 JavaScript
-- CSS
+- SCSS
 - HTML
 - Fetch Web API
 - Cypress Testing

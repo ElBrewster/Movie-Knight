@@ -8,7 +8,7 @@ The Movie Knight Web App, built in React, displays some of the newest films out 
 
 ## Project Views
 ### Visit Our Site!
-![Movie Knight](http://movie-knight.vercel.app/)
+[Movie Knight](http://movie-knight.vercel.app/)
 
 ### Home Page and Movie Page:
 ![Movie Knight](https://media.giphy.com/media/5Jh3VLf122xYAG3XEL/giphy.gif)

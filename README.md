@@ -7,7 +7,8 @@ Not sure what movie to watch tonight? Want to find out if it's any good? You nee
 The Movie Knight Web App, built in React, displays some of the newest films out there! This application allows users to browse through a display of 40 movies, each of which is clickable to view additional information about the movie. 
 
 ## Project Views
-### ![Visit our site!](https://movie-knight.vercel.app/)
+### Visit Our Site!
+![Movie Knight](https://movie-knight.vercel.app/)
 
 ### Home Page and Movie Page:
 ![Movie Knight](https://media.giphy.com/media/5Jh3VLf122xYAG3XEL/giphy.gif)
